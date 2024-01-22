@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" async></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header-content">
+      <form class="search-form">
+        <input type="text" name="productSearch" placeholder="Buscar productos, marcas y más..." class="search-form__input">
+        <button class="search-form__button" type="submit">
+          Buscar
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Results Section -->
+  <section class="results-section">
+    <h3 class="result-section__title">
+      Resultados: <span class="result-counts"></span>
+    </h3>
+    <div class="results"></div>
+  </section>
+
+  <!-- Template Result Card -->
+  <template id="result-template">
+    <div class="result-item">
+      <div class="result-item__content-img">
+        <img src="#" alt="Imagen del Producto" class="result-item__img">
+      </div>
+      <div class="result-item-content">
+        <h4 class="result-item__title"></h4>
+        <p class="result-item__condition"></p>
+        <p class="result-item__stock">
+          Stock: <span class="quantity__stock"></span>
+        </p>
+      </div>
+      <div class="result-item-price">
+        <span class="quantity__price"></span>
+      </div>
+    </div>
+  </template>
+
+</body>
+</html>
+
